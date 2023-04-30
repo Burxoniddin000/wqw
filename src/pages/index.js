@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Layout from '@/Layout/Mayin/Layout'
 import Mainn from '@/componet/CompanetMayin'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ move3 ,move5 ,move4 }) {
