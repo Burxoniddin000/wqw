@@ -1,24 +1,23 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Layout from '@/Layout/Mayin/Layout'
-import Mainn from '@/componet/CompanetMayin'
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import Layout from "@/Layout/Mayin/Layout";
+import Mainn from "@/componet/CompanetMayin";
+import { Allswiper } from "@/componet/Allswiper";
 
+const inter = Inter({ subsets: ["latin"] });
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home({ move3 ,move5 ,move4 }) {
+export default function Home({ move3, move5, move4 }) {
   return (
-  <>
-  <div className='container'>
-
-  <Layout>
-    <Mainn props={move4}/>
-  </Layout>
-  </div>
-  </>
-  )
+    <>
+      <div className="container">
+        <Layout>
+          <Mainn props={move4} />
+          <Allswiper move3={move3} move5={move5} />
+        </Layout>
+      </div>
+    </>
+  );
 }
-
 
 export async function getStaticProps() {
   const ress = await fetch(
@@ -34,5 +33,5 @@ export async function getStaticProps() {
   );
   const move5 = await res5.json();
 
-  return { props: { move5 , move3 ,move4 } };
+  return { props: { move5, move3, move4 } };
 }
