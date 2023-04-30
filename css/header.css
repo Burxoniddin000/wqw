@@ -1,0 +1,39 @@
+.header__item {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: flex-end;
+  color: #ffffff;
+}
+
+.header__sarche {
+  width: 100%;
+  background: inherit;
+  padding: 5px 15px;
+  border-bottom: 2px solid red;
+  border-left: 1px solid red;
+  border-bottom-left-radius: 20px;
+}
+
+.header__input {
+  width: 100%;
+  background: inherit;
+  height: 30px;
+  color: #ffffff;
+  outline: none;
+  font-size: 20px;
+  font-weight: 40;
+}
+
+.header__conatiner {
+  margin: 0 120px 0 60px;
+}/*# sourceMappingURL=header.css.map */
