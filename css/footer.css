@@ -1,0 +1,22 @@
+.footer__link {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #808080;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer__link,
+.footer__link {
+  margin-top: 15px;
+}
+
+.footer__btn {
+  border: 1px solid #808080;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #808080;
+}/*# sourceMappingURL=footer.css.map */

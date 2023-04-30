@@ -1,6 +1,8 @@
 import '@/styles/globals.css'
-import '@/styles/header.scss'
-import '@/styles/footer.scss'
+import '../../css/header.css'
+import '../../css/footer.css'
+import '../../css/main.css'
+
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />
