@@ -20,10 +20,9 @@ export default function NewMove({ props }) {
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
         >
-          {props.results.map((res ,i) => (
+          {props.results.map((res) => (
             <>
-              <div key={i} className="cursor-pointer">
-                <SwiperSlide>
+                <SwiperSlide  key={res.id} className="cursor-pointer">
                   <Link href={'/products/' + res.id} >
 
                     <Image
@@ -34,7 +33,6 @@ export default function NewMove({ props }) {
                     />
                   </Link>
                 </SwiperSlide>
-              </div>
             </>
           ))}
         </Swiper>

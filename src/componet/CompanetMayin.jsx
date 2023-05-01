@@ -3,7 +3,7 @@ import Movie from "../img/HighlightedMovie.png";
 import play from "../img/Play.png";
 import Detail from "../img/Detail.png";
 import Image from "next/image";
-import Sinfelswiper from "@/pages/products/swiper";
+import Sinfelswiper from "@/pages/products/swiperMayin";
 
 
 const Mainn = ({ props }) => {
@@ -18,7 +18,7 @@ const Mainn = ({ props }) => {
     <>
       <div style={styling} className="main__container mb-8 pl-16">
         <div className="pt-48">
-          <div className="">
+          <div>
             <div className="main__name__div">
               <h1 className="main__name">YNIMDA KAL</h1>
             </div>

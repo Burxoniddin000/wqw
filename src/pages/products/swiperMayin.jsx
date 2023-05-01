@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Link from "next/link";
-const Sinfelswiper = ({props}) => {
+const Sinfelswiper = ({ props }) => {
   return (
     <>
       <div className="mb-8">
@@ -20,11 +20,10 @@ const Sinfelswiper = ({props}) => {
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
         >
-          {props.results.map((res, i) => (
+          {props.results.map((res,i) => (
             <>
-              <div key={i}>
-                <SwiperSlide className="cursor-pointer">
-                <Link href={'/products/' + res.id}>
+              <SwiperSlide className="cursor-pointer" key={res.id}>
+                <Link href={"/products/" + res.id}>
                   <Image
                     id={i}
                     width={285}
@@ -33,9 +32,8 @@ const Sinfelswiper = ({props}) => {
                     src={`https://image.tmdb.org/t/p/original/${res.backdrop_path}`}
                     alt="move"
                   />
-                  </Link>
-                </SwiperSlide>
-              </div>
+                </Link>
+              </SwiperSlide>
             </>
           ))}
         </Swiper>

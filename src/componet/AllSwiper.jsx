@@ -1,5 +1,5 @@
 import React from "react";
-import Sinfelswiper from "@/pages/products/swiper";
+import Sinfelswiper from "@/pages/products/swiperMayin";
 import NewMove from "@/pages/products/nweMovi";
 
 export const Allswiper = ({move3 ,move5 }) => {
