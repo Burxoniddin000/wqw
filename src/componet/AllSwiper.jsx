@@ -21,6 +21,7 @@ export const Allswiper = ({move3 ,move5 }) => {
         <h2 className="main__swiper__name">Listem</h2>
         <Sinfelswiper props={move3}/>
       </div>
+      <div></div>
     </div>
   );
 };

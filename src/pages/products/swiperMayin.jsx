@@ -34,8 +34,10 @@ const Sinfelswiper = ({ props }) => {
                   />
                 </Link>
               </SwiperSlide>
+              
             </>
           ))}
+
         </Swiper>
       </div>
     </>
